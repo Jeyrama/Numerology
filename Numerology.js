@@ -33,3 +33,9 @@ So, what is your number?
 
 
 // Solution
+
+function solution(date){
+	let sum = date.getDate() + date.getMonth()+1 + date.getFullYear();
+  while(sum > 9) sum = Math.floor(sum/10) + (sum%10);
+  return sum;
+}
