@@ -41,3 +41,19 @@ function solution(date){
 }
 
 // or
+
+function solution(date){
+  let strDate = date.getDate() + '' + (date.getMonth() + 1) + '' + date.getFullYear();
+  console.log(strDate);
+  return sumDigits(parseInt(strDate, 10));
+}
+
+function sumDigits(val) {
+  let sum = 0;
+  while(val > 10) {
+    sum += val % 10;
+    val = Math.floor(val / 10);
+  }
+  sum += val;
+  return sum > 10 ? sumDigits(sum) : sum;
+}
