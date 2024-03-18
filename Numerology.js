@@ -39,3 +39,5 @@ function solution(date){
   while(sum > 9) sum = Math.floor(sum/10) + (sum%10);
   return sum;
 }
+
+// or
