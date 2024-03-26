@@ -9,7 +9,6 @@ Task:
   month, date, full year, from left to right (MMDDYYYY). 
   If the sum is greater or equal to 10, add up the two digits of the sum.
 
-
 You will be passed in a Date object corresponding to your language.
 
 Example:
